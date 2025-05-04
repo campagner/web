@@ -27,7 +27,7 @@ const GameCard = ({ game }: GameCardProps) => {
                 src={game.imageUrl} 
                 alt={game.title} 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
+                loading="eager"
                 onError={() => setImageError(true)}
               />
             )}
@@ -38,7 +38,7 @@ const GameCard = ({ game }: GameCardProps) => {
           </span>
           <div className="absolute bottom-0 left-0 w-full p-4">
             <h2 className="text-xl font-bold mb-1 text-white drop-shadow-md">{game.title}</h2>
-            <p className="text-gray-200 text-sm line-clamp-2 mb-3 drop-shadow-md">{game.description}</p>
+            <p className="text-gray-300 font-bold text-sm line-clamp-2 mb-3 drop-shadow-md">{game.description}</p>
             <button 
               onClick={() => setShowModal(true)} 
               className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded font-medium transition-colors"

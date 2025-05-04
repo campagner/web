@@ -1,6 +1,6 @@
 import  { Game } from '../types';
 
-// Usando imagens verificadas do Unsplash com opções de fallback
+// Usando imagens com opções de fallback
 export const games: Game[] = [
   {
     id: 'prince-of-persia',
@@ -41,6 +41,14 @@ export const games: Game[] = [
     description: 'FPS revolucionário onde você batalha contra demônios do Inferno como um fuzileiro espacial em Marte.',
     imageUrl: 'src/assets/images/doom.png',
     archiveUrl: 'https://archive.org/details/DoomsharewareEpisode',
+  },
+  {
+    id: 'speed-racer',
+    title: 'Speed Racer in The Challenge of Racer X',
+    year: '1992',
+    description: 'Jogo de corrida clássico com personagem carismático',
+    imageUrl: 'src/assets/images/sr.png',
+    archiveUrl: 'https://archive.org/details/msdos_Speed_Racer_in_The_Challenge_of_Racer_X_1992',
   }
 ]; 
   
